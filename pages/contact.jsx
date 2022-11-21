@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import Link from 'next/link'
+import Breadcrumb from '../component/Breadcrumbs'
 import { Container, display } from '@mui/system'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined'
 import DraftsOutlinedIcon from '@mui/icons-material/DraftsOutlined'
@@ -13,54 +14,54 @@ const contact = () => {
     <>
       <Navbar />
       <Box
-        className="contact_banner"
+        className="con_banner"
         sx={{
           pt: 12,
           
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'right',
           alignContent: 'center',
         }}
       >
         <Box
           sx={{
             textAlign: 'center',
-            bgcolor: '#0098db',
             height: {
-              lg: '120px',
+              lg: '80px',
               xs: '90px',
             },
             width: {
+              lg: 350,
               xs: 200,
             },
+            bgcolor: 'white',
+            opacity: 0.5,
             borderRadius: '3px',
             mt: 4,
             p: 2,
           }}
         >
           <Typography
-            variant="h2"
+            variant="h1"
             sx={{
               fontWeight: '500',
+
+              fontFamily: 'Cinzel',
+
               fontSize: {
-                xs: 20,
-                lg: 30,
+                xs: 25,
+                lg: 50,
               },
               mb: 2,
-              color: 'white',
+              color: 'black',
             }}
           >
             Contact Us
           </Typography>
-          <Link href="/">
-            <a style={{ color: '#1a1a1a', fontSize: '14px' }}>Home</a>
-          </Link>
-          <Typography variant="p" sx={{ color: 'white', fontSize: '14px' }}>
-            
-            / Contact Us
-          </Typography>
         </Box>
       </Box>
+      <Breadcrumb name1="Home" name2="Contact Us" />
+      
 
       <Container
         sx={{
@@ -81,6 +82,8 @@ const contact = () => {
                   xs:'18px'
                 },
                 fontWeight: '500',
+                fontFamily:'cinzel',
+                color:'#0976a5'
               }}
               className="contact_h4"
             >
@@ -127,8 +130,9 @@ const contact = () => {
                     color: '#969696',
                   }}
                 >
-                  795 South Park Avenue, Long Island,
-                  <br /> Newyork, NY 94107.
+                  17A Silas works Fegge, Onitsha.
+
+                  <br /> 8 Akokwa Street fegge, Onitsha.
                 </Typography>
               </Box>
             </Box>
@@ -171,8 +175,8 @@ const contact = () => {
                     color: '#969696',
                   }}
                 >
-                  info@mydomain.com <br />
-                  enquery@edu.com
+               promiseinternational2020@gmail.com 
+                 
                 </Typography>
               </Box>
             </Box>
@@ -215,7 +219,7 @@ const contact = () => {
                     color: '#969696',
                   }}
                 >
-                  +1 (396) 486 4709
+                  09096744364
                 </Typography>
               </Box>
             </Box>
@@ -232,6 +236,8 @@ const contact = () => {
                   xs:'18px'
                 },
                 fontWeight: '500',
+                fontFamily:'cinzel',
+                color:'#0976a5'
               }}
               className="get_h4"
             >

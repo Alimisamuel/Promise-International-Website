@@ -1,125 +1,152 @@
-import * as React from 'react';
+import React from 'react'
+import Navbar from '../component/Navbar'
+import Footer from '../component/Footer'
+import Newsletter from '../component/Newsletter'
+import { Box, Typography } from '@mui/material'
+
+import { Container} from '@mui/system'
+import Breadcrumb from '../component/Breadcrumbs'
 import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import DirectionsIcon from '@mui/icons-material/Directions';
 
+const Faq = () => {
+  const [expanded, setExpanded] = React.useState(false);
 
-import { Box, Container } from '@mui/system';
-import Navbar from '../component/Navbar';
-import Footer from '../component/Footer';
-
-
-
-export default function SimpleAccordion() {
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <>
-    
-        <Navbar/>
-       
-    
+      <Navbar />
+      <Box
+        className="contact_banner"
+        sx={{
+          pt: 12,
+
+          display: 'flex',
+          justifyContent: 'right',
+          alignItems: 'center',
+        }}
+      >
         <Box
-      
-      sx={{ p: '2px 4px', mt:10,bgcolor:'#0098db', flexDirection:'column', display: 'flex', alignItems: 'center' }} 
-    >
-            <Typography variant='h3'
-        sx={{
-            color:'white',
-            mt:3,
-            fontSize:'24px'
-        }}
-        >Frequently Asked Questions</Typography>  
-   <Box>
-      <InputBase
-        sx={{ ml: 1, pl:2,mt:2, flex: 1,bgcolor:'white', width:{
-            lg: 500,
-            md: 500,
-            sm:400,
-            xs:200
-        } }}
-        placeholder="Search Answers Here"
-        inputProps={{ 'aria-label': 'search google maps' }}
-      />
-      <IconButton type="button" sx={{ py:'8px', px:'30px',color:'white', bgcolor:'black', borderRadius:'0px' }} aria-label="search">
-        <Typography variant='body'
-        sx={{
-            fontSize:'15px'
-        }}
-        >Search</Typography>
-    
-      </IconButton>
-      <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-      <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
-        
-      </IconButton>
-      </Box>
-    </Box> 
-        
-        <Container
-       sx={{
-        mb:5,
-       }}
+          sx={{
+            textAlign: 'center',
+            height: {
+              lg: '80px',
+              xs: '90px',
+            },
+            width: {
+              lg: 300,
+              xs: 200,
+            },
+            bgcolor: 'white',
+            opacity: 0.5,
+            borderRadius: '3px',
+            mt: 4,
+            p: 2,
+          }}
         >
-            <Box
+          <Typography
+            variant="h1"
             sx={{
-                mb:2,
-                mt:3
+              fontWeight: '500',
+
+              fontFamily: 'Cinzel',
+
+              fontSize: {
+                xs: 20,
+                lg: 30,
+              },
+              mb: 2,
+              color: 'black',
             }}
-            >
-                <Typography variant='body'>Do you have any issues with the website or the Admission processes? Here are few solutions to some questions that may be on your mind</Typography>
-            </Box>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          
-          <Typography variant='body'>Quest One :  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, mi magna urna </Typography>
-        </AccordionSummary>
-        <AccordionDetails
-        sx={{
-            bgcolor:'#a7acc2'
-        }}
-        >
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac, mi magna urna scelerisque erat. Vitae mi nunc vitae sodales placerat. Fermentum lobortis cursus arcu at nibh turpis. Vitae leo diam diam id.
+          >
+            Frequently Asked Questions
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion>
+        </Box>
+      </Box>
+      <Breadcrumb name1="Home" name2="Faq" />
+      <Container mt={3}>
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
         >
-          <Typography>Accordion 2</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            Question 1:
+          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>How many children are in each class?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Class sizes are between 12 and 18 students
+
+Lessons are adapted in regards to the level of the students and differentiated for their specific needs and abilities.
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion >
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3a-content"
-          id="panel3a-header"
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
         >
-          <Typography>Disabled Accordion</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>Question 2:</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+          What extracurricular activities are on offer?
+          </Typography>
         </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          We run almost thirty after-school clubs. These include a full range of sports, creativity and drama. Students can take part in football, karate, yoga, ballet, modern jazz, cookery, singing, photography, chess, cross-country running, drama and public speaking. Some activities incur an extra cost. More details can be found here.
+          </Typography>
+        </AccordionDetails>
       </Accordion>
-    </Container>
-    <Footer/>
+      <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3bh-content"
+          id="panel3bh-header"
+        >
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            Question 3:
+          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+          Can I visit my child?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          Yes, but we ask that you make a formal request, at least three days in advance using this form. During the first two weeks of the September term, we do not permit any weekend exeats, as students need to settle back into school life. Otherwise, providing no mandatory school activities are taking place, weekend leave starts on Friday at 16h30 until Sunday at 18h00. You may also take your child out for dinner provided you give us due notice.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>Personal data</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
+            amet egestas eros, vitae egestas augue. Duis vel est augue.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </Container>
+    
+
+      <Newsletter />
+      <Footer />
     </>
-  );
+  )
 }
+
+export default Faq

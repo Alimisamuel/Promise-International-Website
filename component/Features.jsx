@@ -36,7 +36,7 @@ const Features = () => {
     'Clubs & activities',
   ]
   const care = [
-    'Day & boarding',
+    'Day',
     'Safe environment',
     'Wraparound care',
     'Exceptional location',
@@ -46,7 +46,7 @@ const Features = () => {
     <>
       <Container>
         <div className="feature_container">
-          <h2>A QUICK LOOK AT PROMISE INTERNATIONAL SCHOOL</h2>
+          <h2 style={{fontFamily:'cinzel'}}>A QUICK LOOK AT PROMISE INTERNATIONAL SCHOOL</h2>
           <p>outstanding features</p>
           <Grid container spacing={2} className="features_container">
             <Grid item className="feature_value">
@@ -144,15 +144,15 @@ const Features = () => {
             </div>
           </Grid>
           <Grid item lg={6} md={6} className="feature_info">
-            <h3>Welcome</h3>
+            <h3 style={{fontFamily:'cinzel'}}>Welcome</h3>
             <p>
-              Promise Int'l welcomes young people aged 5 to 18 from more than 30
-              nations to our exceptional school in the Swiss Alps.
+              Promise Int'l welcomes young people aged 1 to 18 from more than 30
+              nations to our exceptional school in Onitsha.
               <br />
               We pride ourselves on our bilingual approach, giving students
               mastery of French and English. Our students follow globally
               accredited programmes of study, creating informed, globally
-              competent, and future-ready learners. La Garenne’s core values are
+              competent, and future-ready learners. Promise International core values are
               academic excellence, a close-knit family atmosphere, security and
               cultural diversity.
             </p>

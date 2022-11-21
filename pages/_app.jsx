@@ -7,6 +7,7 @@ import createEmotionCache from '../utility/createEmotionCache';
 import lightTheme from '../styles/theme/lightTheme';
 import '../styles/globals.css';
 
+
 const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {

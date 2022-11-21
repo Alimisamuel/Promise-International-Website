@@ -1,40 +1,25 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
 body{
-    font-family: poppins;
+    font-family: Roboto;
 }
 a{
     text-decoration: none;
-    color: white;
+    
 }
 /* Topnav styles */
 
-.topNav_container{
-  backdrop-filter: blur(15px);
-
-    height: 30px;
-    background-color: #0098db;
-    font-family: poppins;
-    
+.topnav{
+  backdrop-filter: blur(10px);
 }
-.social{
-display: flex;
-
-padding-top: 5px;
-}
- .left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
- .right{
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.newsletter_input::placeholder{
+  color:white;
 }
 
 /* banner */
@@ -57,6 +42,7 @@ padding-top: 5px;
   .container span{
     text-transform: uppercase;
     display: block;
+    font-family: cinzel;
   }
   .text1{
     color: white;
@@ -66,6 +52,7 @@ padding-top: 5px;
     margin-bottom: 0px;
     position: relative;
     animation: text 2.5s 1;
+    
   }
   .text2{
     margin-top: -5px;
@@ -240,9 +227,22 @@ justify-content: space-between;
 /* Contact */
 
 .contact_banner{
-  background: #8bc0d7;
-  height: 300px;
-  background-position: center;
+  background: url('../public/ab.jpg');
+  height: 350px;
+  /* background-position: center; */
+  background-size: cover;
+}
+.con_banner{
+  background: url('../public/cond.jpeg');
+  height: 350px;
+  /* background-position: center; */
+  background-size: cover;
+}
+.gallery_banner{
+  background: url('../public/banner_f.jpg');
+  height: 350px;
+  background-position-y: -50px;
+  /* background-position: center; */
   background-size: cover;
 }
 /* .contact_h4::before{
@@ -326,4 +326,10 @@ justify-content: space-between;
   height: 180px;
   background-position: center;
   background-size: contain;
+}
+.register_cover{
+background: url(../public/RegisterCover.jpeg);
+background-size: cover;
+background-position: center;
+
 }

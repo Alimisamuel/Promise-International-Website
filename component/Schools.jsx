@@ -1,10 +1,10 @@
 import { Grid, Typography, Divider, Button } from '@mui/material'
 import { Box, display } from '@mui/system'
 import React from 'react'
-import SchoolIcon from '@mui/icons-material/School';
-import PostAddIcon from '@mui/icons-material/PostAdd';
-import CollectionsIcon from '@mui/icons-material/Collections';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import SchoolIcon from '@mui/icons-material/School'
+import PostAddIcon from '@mui/icons-material/PostAdd'
+import CollectionsIcon from '@mui/icons-material/Collections'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 
 import Image from 'next/image'
 
@@ -160,35 +160,41 @@ const Schools = () => {
                 alignItem: 'center',
                 display: 'flex',
               }}
-            >
-              
-            </Box>
+            ></Box>
             <Box
-            sx={{
-              justifyContent: 'center',
-              alignItem: 'center',
-              display: 'flex',
-              textAlign:'center',
-              flexDirection:'column',
-              px: 6,
-              py:3,
-borderBottom:'2px solid #0098db'
-            }}
+              sx={{
+                justifyContent: 'center',
+                alignItem: 'center',
+                display: 'flex',
+                textAlign: 'center',
+                flexDirection: 'column',
+                px: 6,
+                py: 3,
+                borderBottom: '2px solid #0098db',
+              }}
             >
-              <SchoolIcon/>
-<Typography variant='h4'
-sx={{
-  fontSize:'18px',
-  fontWeight:'600'
-}}
->Curriculum</Typography>
-<Typography variant='p'
-sx={{
-  fontSize:'12px'
-}}
->We value academic excellence through highly committed and passionate teachers, inquiry-based learning, state-of-the-art educational technology.</Typography>
-<br/>
-<Button variant='outlined'>Read More</Button>
+              <SchoolIcon />
+              <Typography
+                variant="h4"
+                sx={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                }}
+              >
+                Curriculum
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  fontSize: '12px',
+                }}
+              >
+                We value academic excellence through highly committed and
+                passionate teachers, inquiry-based learning, state-of-the-art
+                educational technology.
+              </Typography>
+              <br />
+              <Button variant="outlined">Read More</Button>
             </Box>
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
@@ -199,35 +205,41 @@ sx={{
                 alignItem: 'center',
                 display: 'flex',
               }}
-            >
-              
-            </Box>
+            ></Box>
             <Box
-            sx={{
-              justifyContent: 'center',
-              alignItem: 'center',
-              display: 'flex',
-              textAlign:'center',
-              flexDirection:'column',
-              px: 6,
-              py:3,
-borderBottom:'2px solid #0098db'
-            }}
+              sx={{
+                justifyContent: 'center',
+                alignItem: 'center',
+                display: 'flex',
+                textAlign: 'center',
+                flexDirection: 'column',
+                px: 6,
+                py: 3,
+                borderBottom: '2px solid #0098db',
+              }}
             >
-              <PostAddIcon/>
-<Typography variant='h4'
-sx={{
-  fontSize:'18px',
-  fontWeight:'600'
-}}
->School Blog</Typography>
-<Typography variant='p'
-sx={{
-  fontSize:'12px'
-}}
->Academic excellence, a warm international family ambience in which diversity is welcomed, and a safe location in exceptional surroundings, are our core values.</Typography>
-<br/>
-<Button variant='outlined'>Read More</Button>
+              <PostAddIcon />
+              <Typography
+                variant="h4"
+                sx={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                }}
+              >
+                School Blog
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  fontSize: '12px',
+                }}
+              >
+                Academic excellence, a warm international family ambience in
+                which diversity is welcomed, and a safe location in exceptional
+                surroundings, are our core values.
+              </Typography>
+              <br />
+              <Button variant="outlined">Read More</Button>
             </Box>
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
@@ -238,35 +250,40 @@ sx={{
                 alignItem: 'center',
                 display: 'flex',
               }}
-            >
-            
-            </Box>
+            ></Box>
             <Box
-            sx={{
-              justifyContent: 'center',
-              alignItem: 'center',
-              display: 'flex',
-              textAlign:'center',
-              flexDirection:'column',
-              px: 6,
-              py:3,
-borderBottom:'2px solid #0098db'
-            }}
+              sx={{
+                justifyContent: 'center',
+                alignItem: 'center',
+                display: 'flex',
+                textAlign: 'center',
+                flexDirection: 'column',
+                px: 6,
+                py: 3,
+                borderBottom: '2px solid #0098db',
+              }}
             >
-              <CollectionsIcon/>
-<Typography variant='h4'
-sx={{
-  fontSize:'18px',
-  fontWeight:'600'
-}}
->Photo Gallery</Typography>
-<Typography variant='p'
-sx={{
-  fontSize:'12px'
-}}
->Click on the image for the photo gallery: see school life at La Garenne and enjoy new photos each week...</Typography>
-<br/>
-<Button variant='outlined'>Read More</Button>
+              <CollectionsIcon />
+              <Typography
+                variant="h4"
+                sx={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                }}
+              >
+                Photo Gallery
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  fontSize: '12px',
+                }}
+              >
+                Click on the image for the photo gallery: see school life at La
+                Garenne and enjoy new photos each week...
+              </Typography>
+              <br />
+              <Button variant="outlined">Read More</Button>
             </Box>
           </Grid>
           <Grid item lg={3} md={4} sm={6} xs={12}>
@@ -277,35 +294,41 @@ sx={{
                 alignItem: 'center',
                 display: 'flex',
               }}
-            >
-            
-            </Box>
+            ></Box>
             <Box
-            sx={{
-              justifyContent: 'center',
-              alignItem: 'center',
-              display: 'flex',
-              textAlign:'center',
-              flexDirection:'column',
-              px: 6,
-              py:3,
-borderBottom:'2px solid #0098db'
-            }}
+              sx={{
+                justifyContent: 'center',
+                alignItem: 'center',
+                display: 'flex',
+                textAlign: 'center',
+                flexDirection: 'column',
+                px: 6,
+                py: 3,
+                borderBottom: '2px solid #0098db',
+              }}
             >
-              <EmojiEventsIcon/>
-<Typography variant='h4'
-sx={{
-  fontSize:'18px',
-  fontWeight:'600'
-}}
->Awards</Typography>
-<Typography variant='p'
-sx={{
-  fontSize:'12px'
-}}
->We value academic excellence through highly committed and passionate teachers, inquiry-based learning, state-of-the-art educational technology.</Typography>
-<br/>
-<Button variant='outlined'>Read More</Button>
+              <EmojiEventsIcon />
+              <Typography
+                variant="h4"
+                sx={{
+                  fontSize: '18px',
+                  fontWeight: '600',
+                }}
+              >
+                Awards
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  fontSize: '12px',
+                }}
+              >
+                We value academic excellence through highly committed and
+                passionate teachers, inquiry-based learning, state-of-the-art
+                educational technology.
+              </Typography>
+              <br />
+              <Button variant="outlined">Read More</Button>
             </Box>
           </Grid>
         </Grid>

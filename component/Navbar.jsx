@@ -15,43 +15,52 @@ import logo from '../public/logo.png'
 const Navbar = () => {
   const NavDetails = [
     {
-      id: 1,
+      id: 0,
       title : "Home",
       link :"/"
     },
     {
-      id : 2,
+      id : 1,
       title:"About",
       link: "/About"
     },
     
     {
-      id : 3,
+      id : 2,
       title:"Student Portal",
-      link: "/"
+      link: "http://localhost:3000/login"
+    },
+    
+    {
+      id : 3,
+      title:"Staff Dashboard",
+      link: "http://localhost:3000/login"
     },
     
     {
       id : 4,
-      title:"Staff Dashboard",
-      link: "/"
+      title:"Gallery",
+      link: "/gallery"
     },
-    
     {
-      id : 5,
-      title:"Faq",
-      link: "/"
+      id: 5,
+      title: "Contact Us",
+      link:"/contact"
     },
     {
       id: 6,
-      title: "Contact Us",
-      link:"/contact"
+      title: "Faq",
+      link:"/Faq"
     }
   ]
   
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'))
-  const [value, setValue] = useState(0);
+  const [value, setValue] = React.useState();
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
     
     <>
@@ -72,12 +81,12 @@ const Navbar = () => {
           ):(
 <>
           
-        <Tabs sx={{marginLeft:'auto', marginRight:'30px'}} value={value} onChange={(e,value)=> setValue(value)} indicatorColor="primary">
+        <Tabs sx={{marginLeft:'auto', marginRight:'30px'}} value={value} onChange={handleChange} >
   
           {
             NavDetails.map((page, index) => (
               
-                <Tab key={index} label={page.title}  href={page.link} sx={{fontSize:'12px', color:'inherit'}} />
+                <Tab key={index} label={page.title} value={page.id} href={page.link} sx={{fontSize:'12px', color:'inherit'}} />
                 
               
             ))
@@ -88,7 +97,7 @@ const Navbar = () => {
           
         
         </Tabs>
-        <Link href="/register"><a target='blank'>
+        <Link href="/register"><a >
         <Button variant="contained" sx={{fontSize:'12px'}}>Get Admission
         
         <SchoolIcon sx={{marginLeft:'10px',fontSize:'15px'}}/>
@@ -106,4 +115,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar 

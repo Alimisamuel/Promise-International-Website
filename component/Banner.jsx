@@ -10,7 +10,7 @@ const Banner = () => {
     <div className="container">
       <span className="text1">Welcome To</span>
       <span className="text2">Promise Int'l School</span>
-      <Link href="/register"><a target="blank">
+      <Link href="/register"><a>
       <Button variant='outlined'>Apply for Admission</Button>
         </a></Link>
     </div>
