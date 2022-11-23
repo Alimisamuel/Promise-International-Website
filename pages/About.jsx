@@ -148,7 +148,7 @@ const About = () => {
                 </Typography>
                 <Typography variant="p">
                   To make a positive impact in the lives of all (every soul)
-                  that comes in contact with the "promise worls."
+                  that comes in contact with the promise worls.
                 </Typography>
               </Box>
             </Container>
@@ -175,7 +175,7 @@ const About = () => {
 
               
               <Card sx={{ maxWidth: 345 , mt:6}}>
-              <Image src={gall} height="200px" width="345px"/>
+              <Image src={gall} height="200px" width="345px" alt='gallery'/>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Gallery

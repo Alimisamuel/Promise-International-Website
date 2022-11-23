@@ -43,6 +43,7 @@ const register = () => {
                     width="50"
                     height="50"
                     className="searchImg"
+                    alt='logo'
                   />
                 </a>
               </Link>
