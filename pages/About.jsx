@@ -156,7 +156,7 @@ const About = () => {
           <Grid item lg={3}>
             <Container>
               <Card sx={{ maxWidth: 345 }}>
-              <Image src={award} height="200px" width="345px"/>
+              <Image src={award} height="200px" width="345px" alt='award'/>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Awards

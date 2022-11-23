@@ -283,7 +283,7 @@ const show = GalleryData
         width:(data.width)
       }} 
       square >
-    <Image src={data.img} width={data.width} height={data.height} />
+    <Image src={data.img} width={data.width} height={data.height} alt=" " />
       </Paper>
       </Grid>
     ))
@@ -300,7 +300,7 @@ const show = GalleryData
         width:(data.width)
       }} 
       square >
-    <Image src={data.img} width={data.width} height={data.height} />
+    <Image src={data.img} width={data.width} height={data.height} alt=" " />
       </Paper>
       </Grid>
     ))
@@ -314,7 +314,7 @@ const show = GalleryData
   <Grid item lg={3}>
   <Container>
               <Card sx={{ maxWidth: 345 }}>
-              <Image src={award1} height="200px" width="345px"/>
+              <Image src={award1} height="200px" width="345px" alt=''/>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Awards
@@ -333,7 +333,7 @@ const show = GalleryData
 
               
               <Card sx={{ maxWidth: 345 , mt:6}}>
-              <Image src={gal1} height="200px" width="345px"/>
+              <Image src={gal1} height="200px" width="345px" alt=''/>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Gallery
