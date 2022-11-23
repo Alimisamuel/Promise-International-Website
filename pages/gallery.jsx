@@ -73,7 +73,7 @@ const AwardData=[
 },
 {
     id: 4,
-    img: award3
+    img: award4
 },
 {
     id: 5,
